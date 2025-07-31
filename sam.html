@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samuel Britto | Cybersecurity Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scroll for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Subtle hover animation on project cards */
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.3), 0 10px 10px -5px rgba(14, 165, 233, 0.04);
+    }
+    /* Custom focus styles for accessibility */
+    input:focus, textarea:focus, button:focus {
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="#" class="text-teal-400 text-2xl font-bold tracking-wide">Samuel Britto</a>
+      <ul class="hidden md:flex space-x-8 font-semibold text-gray-300">
+        <li><a href="#about" class="hover:text-teal-400 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-teal-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-400 transition">Projects</a></li>
+        <li><a href="#certifications" class="hover:text-teal-400 transition">Certifications</a></li>
+        <li><a href="#contact" class="hover:text-teal-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1470&q=80');">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 flex flex-col justify-center items-center px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-teal-400 drop-shadow-lg mb-4">Samuel Britto</h1>
+      <p class="text-xl md:text-2xl max-w-3xl text-gray-300 mb-8 leading-relaxed">Cybersecurity Student | SSCE Engineering College, Kaaramadai | Based in Coimbatore</p>
+      <a href="#contact" class="inline-block bg-teal-500 hover:bg-teal-600 transition text-white font-semibold py-4 px-10 rounded-lg shadow-lg uppercase tracking-wide drop-shadow">
+        Hire Me
+      </a>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-teal-400 mb-8 text-center">About Me</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto text-center text-lg md:text-xl leading-relaxed">
+      I am Samuel Britto, a passionate and driven cybersecurity student from Coimbatore, currently studying at SSCE Engineering College, Kaaramadai. My mission is to protect digital infrastructures by mastering the latest cybersecurity technologies and methodologies. I’m eager to apply my skills and creativity to solve real-world security challenges and contribute to a safer digital world.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="bg-gray-800 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-teal-400 mb-12 text-center">Skills & Tools</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-12 text-center">
+        
+        <div class="flex flex-col items-center space-y-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L15 12 9.75 7"/></svg>
+          <p class="font-semibold text-lg">Cybersecurity Fundamentals</p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-3">
+          <img src="https://img.icons8.com/ios-filled/64/14b8a6/burp-suite.png" alt="Burp Suite" class="h-16 w-16"/>
+          <p class="font-semibold text-lg">Burp Suite</p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-3">
+          <img src="https://img.icons8.com/ios-filled/64/14b8a6/wireshark.png" alt="Wireshark" class="h-16 w-16"/>
+          <p class="font-semibold text-lg">Wireshark</p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-3">
+          <img src="https://img.icons8.com/ios-filled/64/14b8a6/metasploit.png" alt="Metasploit" class="h-16 w-16"/>
+          <p class="font-semibold text-lg">Metasploit</p>
+        </div>
+
+        <div class="flex flex-col items-center space-y-3">
+          <img src="https://img.icons8.com/ios-filled/64/14b8a6/password1.png" alt="Hashcat" class="h-16 w-16"/>
+          <p class="font-semibold text-lg">Hashcat</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-teal-400 mb-12 text-center">Projects</h2>
+    <div class="grid gap-12 md:grid-cols-3">
+
+      <article class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md transition-transform duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Phishing Detector" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-teal-400 mb-2">Phishing URL Detection</h3>
+          <p class="text-gray-400 mb-4">Built a machine learning tool to detect phishing URLs in real-time, improving early threat identification.</p>
+          <a href="#" class="text-teal-300 hover:text-teal-500 font-semibold underline">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md transition-transform duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1581090700227-440f4ee3b30b?auto=format&fit=crop&w=800&q=80" alt="Network IDS" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-teal-400 mb-2">Network Intrusion Detection</h3>
+          <p class="text-gray-400 mb-4">Developed a real-time IDS system to monitor and alert for suspicious network traffic using Scapy.</p>
+          <a href="#" class="text-teal-300 hover:text-teal-500 font-semibold underline">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md transition-transform duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1580910051074-cfb14d6f636b?auto=format&fit=crop&w=800&q=80" alt="Password Cracking Research" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-teal-400 mb-2">Password Cracking Research</h3>
+          <p class="text-gray-400 mb-4">Explored hash cracking techniques with Hashcat & John the Ripper to enhance password security awareness.</p>
+          <a href="#" class="text-teal-300 hover:text-teal-500 font-semibold underline">View Project</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications" class="bg-gray-800 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-teal-400 mb-10 text-center">Certifications</h2>
+      <ul class="max-w-xl mx-auto list-disc list-inside space-y-4 text-gray-300 text-lg">
+        <li><strong>Certified Ethical Hacker (CEH)</strong> – EC-Council</li>
+        <li><strong>CompTIA Security+</strong></li>
+        <li><strong>Google IT Support Professional Certificate</strong></li>
+        <li><em>More certifications coming soon…</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-extrabold text-teal-400 mb-12">Get In Touch</h2>
+    <form action="#" method="POST" class="space-y-8 text-left" novalidate>
+      <div>
+        <label for="name" class="block mb-2 font-semibold text-gray-200">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-400 transition" />
+      </div>
+      <div>
+        <label for="email" class="block mb-2 font-semibold text-gray-200">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-400 transition" />
+      </div>
+      <div>
+        <label for="message" class="block mb-2 font-semibold text-gray-200">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message" class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-400 transition"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 transition text-white font-extrabold py-4 rounded-lg uppercase tracking-wide shadow-lg">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-center py-8 border-t border-gray-700 text-gray-500 text-sm">
+    &copy; 2025 Samuel Britto — Cybersecurity Portfolio — Coimbatore
+  </footer>
+
+  <!-- INNOVATIONS & CONTRIBUTIONS SECTION -->
+  <section id="innovations" class="max-w-6xl mx-auto px-6 py-16 bg-gray-900">
+    <h2 class="text-4xl font-extrabold text-teal-400 mb-10 text-center">Innovations & Contributions</h2>
+    <div class="max-w-4xl mx-auto text-gray-300 text-lg space-y-6">
+      <p>
+        Actively exploring advanced penetration testing methodologies and developing custom tools to automate vulnerability scans.
+      </p>
+      <p>
+        Researching blockchain security to enhance trust and integrity in decentralized applications.
+      </p>
+      <p>
+        Contributed to open-source cybersecurity projects on GitHub, including scripts for network reconnaissance and password auditing.
+      </p>
+      <p>
+        Constantly updating skills through industry webinars, CTF competitions, and security conferences.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE TIMELINE -->
+  <section id="timeline" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-teal-400 mb-12 text-center">Education & Experience</h2>
+    <ol class="relative border-l border-teal-400 max-w-3xl mx-auto">
+      <li class="mb-10 ml-6">
+        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-teal-400 rounded-full ring-8 ring-gray-900">
+          <svg class="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 20 20"><path d="M6 2a2 2 0 100 4 2 2 0 000-4zM6 6a6 6 0 00-6 6v6h12v-6a6 6 0 00-6-6z"/></svg>
+        </span>
+        <h3 class="text-lg font-semibold text-teal-400">Bachelor of Engineering in Cybersecurity</h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2022 - Present</time>
+        <p class="text-gray-300">SSCE Engineering College, Kaaramadai</p>
+      </li>
+      <li class="mb-10 ml-6">
+        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-teal-400 rounded-full ring-8 ring-gray-900">
+          <svg class="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 20 20"><path d="M8 9a3 3 0 116 0v1h1a1 1 0 011 1v1h-9v-1a1 1 0 011-1h1v-1z"/></svg>
+        </span>
+        <h3 class="text-lg font-semibold text-teal-400">Internship - Junior Penetration Tester</h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Summer 2024</time>
+        <p class="text-gray-300">CyberSecure Solutions, Coimbatore</p>
+      </li>
+      <li class="ml-6">
+        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-teal-400 rounded-full ring-8 ring-gray-900">
+          <svg class="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 20 20"><path d="M13 7H7v6h6V7z"/></svg>
+        </span>
+        <h3 class="text-lg font-semibold text-teal-400">Capture The Flag (CTF) Competitions</h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2023 - Present</time>
+        <p class="text-gray-300">Active participant in online cybersecurity CTFs and challenges, ranking in top 10% globally.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="bg-gray-800 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-teal-400 mb-12 text-center">What People Say</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <blockquote class="bg-gray-900 rounded-lg p-8 text-gray-300 shadow-lg">
+          <p class="mb-4 italic">"Samuel's dedication to cybersecurity is impressive. His proactive approach to learning and solving challenges stands out."</p>
+          <footer class="text-teal-400 font-semibold">- Prof. Rajesh Kumar, SSCE Engineering College</footer>
+        </blockquote>
+        <blockquote class="bg-gray-900 rounded-lg p-8 text-gray-300 shadow-lg">
+          <p class="mb-4 italic">"During his internship, Samuel showed exceptional skills in penetration testing and teamwork. Highly recommend him."</p>
+          <footer class="text-teal-400 font-semibold">- Anitha Devi, CyberSecure Solutions</footer>
+        </blockquote>
+        <blockquote class="bg-gray-900 rounded-lg p-8 text-gray-300 shadow-lg">
+          <p class="mb-4 italic">"A passionate learner with a keen eye for detail — Samuel would be an asset to any cybersecurity team."</p>
+          <footer class="text-teal-400 font-semibold">- Mentor, Cybersecurity CTF Community</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME & SOCIAL LINKS SECTION -->
+  <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <a href="/resume-samuel-britto.pdf" download class="inline-block bg-teal-500 hover:bg-teal-600 transition text-white font-extrabold py-4 px-10 rounded-lg shadow-lg uppercase tracking-wide mb-8">
+      Download My Resume
+    </a>
+    <div class="flex justify-center space-x-8 text-gray-300 text-3xl">
+      <a href="https://linkedin.com/in/Samuel Britto" target="_blank" aria-label="LinkedIn" class="hover:text-teal-400 transition">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.269c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.269h-3v-5.604c0-1.337-.027-3.06-1.865-3.06-1.865 0-2.151 1.455-2.151 2.957v5.707h-3v-10h2.885v1.367h.041c.401-.757 1.381-1.554 2.843-1.554 3.04 0 3.601 2 3.601 4.594v5.593z"/></svg>
+      </a>
+      <a href="https://github.com/samuelbritto-7" target="_blank" aria-label="GitHub" class="hover:text-teal-400 transition">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.084-.729.084-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.81 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.403c1.02.005 2.045.137 3.003.403 2.292-1.552 3.298-1.23 3.298-1.23.655 1.653.243 2.873.12 3.176.77.84 1.236 1.91 1.236 3.22 0 4.61-2.803 5.625-5.475 5.922.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.217.694.825.576 4.765-1.585 8.202-6.082 8.202-11.384 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="mailto:samuel.britto@example.com" aria-label="Email" class="hover:text-teal-400 transition text-4
+</body>
+</html>
